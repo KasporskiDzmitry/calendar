@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div id="nav">
+                <i class="material-icons arrow" onclick="switchMonth('prev')">arrow_left</i>
+                <span id="nav-date"></span>
+                <i class="material-icons arrow" onclick="switchMonth('next')">arrow_right</i>
+                <button type="button" class="button-small" onclick="toToday()">Сегодня</button>
+            </div>
+            <div id="calendar">
+            </div>
+        </div>
+    </main>
+<script src="js/calendar.js"></script>
+</body>
+</html>

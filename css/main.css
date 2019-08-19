@@ -1,0 +1,134 @@
+/* Global settings */
+
+* {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    transition: .2s;
+    user-select: none;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    height: 100vh;
+}
+
+.container {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.button-small {
+    font-size: 17px;
+    width: 100px;
+    padding: 0px;
+    margin: 0px 5px 0px 0px;
+    color: darkslategray;
+    background: #dff0f3;;
+    border: silver 1px solid;
+    border-radius: 5px;
+}
+
+.button-small:hover,
+.button-main:hover {
+    color: white;
+    background-color: darkorchid;
+}
+
+.side-arrow:before {
+    content: '';
+    position: absolute; /* Абсолютное позиционирование */
+    left: 20px; top: -27px; /* Положение треугольника */
+    border: 15px solid transparent; /* Прозрачные границы */
+    border-bottom: 12px solid #ffffff; /* Добавляем треугольник */
+}
+
+.side-arrow:after {
+    content: '';
+    position: absolute; /* Абсолютное позиционирование */
+    left: 17px; top: -32px; /* Положение треугольника */
+    border: 18px solid transparent; /* Прозрачные границы */
+    border-bottom: 14px solid silver; /* Добавляем треугольник */
+    z-index: -1;
+}
+
+/* Navigation */
+
+#nav {
+    margin-top: 10px;
+}
+
+#nav i {
+    vertical-align: bottom;
+}
+
+.arrow {
+    border: silver 2px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    color: silver;
+}
+
+.arrow:hover {
+    color: darkorchid;
+    border-color: darkorchid;
+}
+
+#nav-date {
+    text-align: center;
+    display: inline-block;
+    width: 150px;
+    font-size: 20px;
+    margin: 0px 5px;
+    cursor: default;
+    color: red;
+}
+
+#nav button {
+    margin-left: 10px;
+}
+
+/* Calendar */
+
+#calendar {
+    margin-top: 15px;
+}
+
+.day {
+    width: 13%;
+    height: 85px;
+    display: inline-block;
+    padding: 5px;
+    background: rgba(209, 255, 243, 0.8);
+    border: #94b1dc 1px solid;
+    font-size: 13px;
+    color: grey;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.day:hover {
+    background-color: rgba(209, 255, 243, 0.3);
+}
+
+.today {
+    background-color: dodgerblue;
+}
+
+.current-month {
+    color: #222222;
+}
+
+.day span {
+    color: #222222;
+}
+
+.day h3 {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.weekend span,
+.weekend h3 {
+    color: red;
+}
