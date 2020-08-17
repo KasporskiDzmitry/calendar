@@ -5,6 +5,7 @@ Simple HTML/CSS/JS calendar
 ## Getting Started
 
 Clone or download to your local machine and run index.html
+https://kasporskidzmitry.github.io/calendar/
 
 ## Built With
 
